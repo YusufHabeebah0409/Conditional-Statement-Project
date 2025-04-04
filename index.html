@@ -25,10 +25,9 @@
 
         // Number 3 Assignment
          function newEssay() {
-            var essay = essay1.value.trim()
-            var newEssay = essay.split()
-            var newEssayEdited = newEssay.join(" ")
-            editedEssay.innerHTML = newEssayEdited
+            var essay = essay1.value.toLowerCase().trim()
+            var newEssay = essay.split(/\s+/)
+            editedEssay.innerHTML = newEssay
          }
     </script>
 
