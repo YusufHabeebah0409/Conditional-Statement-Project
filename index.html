@@ -11,9 +11,10 @@
     <button onclick="enterAddress()">Enter Address </button>
     <div id="newAddress"> Your new address will show here </div>
 
-
-
-
+    <h1>3</h1>
+    <input type="text" placeholder="Input Essay " id="essay1">
+    <button onclick="newEssay()"> Enter Essay</button>
+    <div id="editedEssay">New Edited Essay</div>
 
      <script>
         // Number 1 Assignment
@@ -21,7 +22,14 @@
             var lowerAddress = input1.value.toLowerCase() 
         newAddress.innerHTML = lowerAddress
         } 
-        
+
+        // Number 3 Assignment
+         function newEssay() {
+            var essay = essay1.value.trim()
+            var newEssay = essay.split()
+            var newEssayEdited = newEssay.join(" ")
+            editedEssay.innerHTML = newEssayEdited
+         }
     </script>
 
 </body>
