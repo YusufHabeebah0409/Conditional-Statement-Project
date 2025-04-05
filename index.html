@@ -25,6 +25,11 @@
     <input type="number" id="weather" placeholder="LAUTECH Weather">
     <button onclick="checkWeather()">Check Weather</button>
     <div id="weatherResult">Weather result will show here</div>
+
+    <h1>5</h1>
+    <input type="number" id="reward" placeholder="Enter Number of item to get Customer Reward">
+    <button onclick="checkReward()">Check Reward</button>
+    <div id="rewardResult">Reward result will show here</div>
         
      <script>
         // Number 1 Assignment
@@ -65,6 +70,19 @@
             }
             
         }
+        
+
+        // Number 5 Assignment
+        function checkReward() {
+            var rewardInput = Number(reward.value) 
+            if (rewardInput%2 ==1) {
+                rewardResult.innerHTML = "You are not eligible for a reward!"
+            }else {
+                rewardResult.innerHTML = "You are eligible for a reward!"
+            }
+            
+        }
+
 
 
     </script>
