@@ -16,6 +16,11 @@
     <button onclick="newEssay()"> Enter Essay</button>
     <div id="editedEssay">New Edited Essay</div>
 
+    <h1>7</h1>
+    <input type="text" id="quiz" placeholder="Input Answer here">
+    <button onclick="checkAnswer()">Check Answer</button>
+    <div id="result">Result will show here</div>
+        
      <script>
         // Number 1 Assignment
         function enterAddress() {
@@ -29,6 +34,18 @@
             var newEssay = essay.split(/\s+/)
             editedEssay.innerHTML = newEssay
          }
+
+
+         // Number 7 Assignment
+        function checkAnswer() {
+            var answer = quiz.value.toLowerCase()
+            if (answer === "yes") {
+                result.innerHTML = "Correct!" 
+            } else {
+                result.innerHTML = "Incorrect!"
+            }
+        }
+
     </script>
 
 </body>
