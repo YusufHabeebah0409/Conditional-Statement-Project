@@ -20,6 +20,11 @@
     <input type="text" id="quiz" placeholder="Input Answer here">
     <button onclick="checkAnswer()">Check Answer</button>
     <div id="result">Result will show here</div>
+
+    <h1>6</h1>
+    <input type="number" id="weather" placeholder="LAUTECH Weather">
+    <button onclick="checkWeather()">Check Weather</button>
+    <div id="weatherResult">Weather result will show here</div>
         
      <script>
         // Number 1 Assignment
@@ -45,6 +50,22 @@
                 result.innerHTML = "Incorrect!"
             }
         }
+
+        // Number 6 Assignment
+        function checkWeather() {
+            var weatherInput = Number(weather.value) 
+            if (weatherInput <=19) {
+                weatherResult.innerHTML = "It's a cold day!"
+            } else if (weatherInput >19 && weather <=28) {
+                weatherResult.innerHTML = "It's a warm day!"
+            } else if( weatherInput >=29) {
+                weatherResult.innerHTML = "It's a hot day!"
+            }else {
+                weatherResult.innerHTML = "Invalid input!"
+            }
+            
+        }
+
 
     </script>
 
